@@ -1,7 +1,6 @@
-apiVersion: apps.3scale.net/v1alpha1
-kind: APIManager
-metadata:
-  name: threescale-apimanager
-  namespace: 3scale-project
-spec:
-  wildcardDomain: apps.dcmsnonprod.bank.sbi
+UPDATE CUSTOMER_ENROLLMENT
+SET MOBILE_NUMBER1 = "1" || LPAD(TO_CHAR(CUSTOMER_ID), 9, '0') where customer_enrollment_id>10090006
+ 
+UPDATE cms_card.CUSTOMER_ENROLLMENT
+   SET email = CUSTOMER_FIRST_NAME || CBS_CUSTOMER_ID || '@gmail.com' where customer_enrollment_id>10090006
+ 
