@@ -1,1 +1,7 @@
-hellow gaurang bhai
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIManager
+metadata:
+  name: threescale-apimanager
+  namespace: 3scale-project
+spec:
+  wildcardDomain: apps.dcmsnonprod.bank.sbi
